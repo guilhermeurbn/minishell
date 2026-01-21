@@ -6,11 +6,12 @@
 #    By: scootergui <scootergui@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/24 18:14:23 by scootergui        #+#    #+#              #
-#    Updated: 2025/11/24 18:14:51 by scootergui       ###   ########.fr        #
+#    Updated: 2026/01/21 14:42:24 by scootergui       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = srcs/main.c srcs/parsing.c srcs/signs.c srcs/lexer.c srcs/utils_lexer.c
+
 OBJS = $(SRCS:.c=.o)
 
 CC = @cc

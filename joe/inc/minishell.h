@@ -6,7 +6,7 @@
 /*   By: scootergui <scootergui@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:07:22 by scootergui        #+#    #+#             */
-/*   Updated: 2025/11/24 18:13:01 by scootergui       ###   ########.fr       */
+/*   Updated: 2026/01/21 14:43:15 by scootergui       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,12 @@ int				ft_isspace(int space);
 int				ft_isoperator(char c);
 t_token_type	get_operator(char *str, int *i);
 char			*read_word(char *s, int *i); //Testar
+
+//parsing.c
+t_cmd	*new_cmd(void);
+void	add_arg(t_cmd *cmd, char *arg);
+void	handle_operator(t_cmd	**current, t_token **token);
+t_cmd	*parse_tokens(t_token *token);
+
 
 #endif
