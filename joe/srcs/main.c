@@ -6,7 +6,7 @@
 /*   By: scootergui <scootergui@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:08:20 by scootergui        #+#    #+#             */
-/*   Updated: 2025/11/24 18:13:52 by scootergui       ###   ########.fr       */
+/*   Updated: 2026/02/02 19:34:23 by scootergui       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # include <readline/readline.h>
 # include <readline/history.h>
 
-/*int main(void)
+int main(void)
 {
 	char *line;
 
@@ -29,9 +29,10 @@
 		printf("Input: %s\n", line); //debug
 		free(line);
 	}
+	printf("exit\n");
 	return (0);
-}*/
-int main()
+}
+/*int main()
 {
     t_token *list = ft_lexer("echo hello | grep hi >> out.txt");
 
@@ -43,8 +44,8 @@ int main()
     }
 
     free_tokens(list);
-}
-/*void print_tokens(t_token *list)
+}*/
+void print_tokens(t_token *list)
 {
     while (list)
     {
@@ -91,7 +92,7 @@ void print_commands(t_cmd *cmd)
         n++;
     }
 }
-int main()
+/*int main()
 {
     char input[] = "echo hello | wc >> out.txt";
     t_token *tokens = ft_lexer(input);

@@ -6,7 +6,7 @@
 /*   By: scootergui <scootergui@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 18:08:31 by scootergui        #+#    #+#             */
-/*   Updated: 2025/11/24 18:08:33 by scootergui       ###   ########.fr       */
+/*   Updated: 2026/02/02 19:27:34 by scootergui       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void signal_handler(int sign)
 {
 	(void)sign;
-	write(1, "\nminishell> ", 12);
+	write(1, "\n", 2);
 	rl_replace_line("", 0);
 	rl_on_new_line();
 	rl_redisplay();
