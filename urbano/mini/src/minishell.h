@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 17:13:40 by guisanto          #+#    #+#             */
-/*   Updated: 2026/01/27 03:08:28 by guisanto         ###   ########.fr       */
+/*   Updated: 2026/02/07 16:22:07 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,7 @@ typedef struct s_cmd
 	t_redir 		*redirs;
 	struct s_cmd 	*next;
 }	t_cmd;
+
+
 
 #endif

@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec_redir.c                                       :+:      :+:    :+:   */
+/*   redir.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/24 03:00:01 by guisanto          #+#    #+#             */
-/*   Updated: 2026/01/24 03:05:42 by guisanto         ###   ########.fr       */
+/*   Created: 2026/02/07 16:33:56 by guisanto          #+#    #+#             */
+/*   Updated: 2026/02/07 16:34:29 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../minishell.h"
 
-/*  Aplicar redirecionamentos
-	•	☐ abrir arquivos
-	•	☐ dup2
-	•	☐ fechar fd */
+t_redir *redir_new(int type, char *file)
+{
+	t_redir *redir;
+
+	redir = malloc(sizeof(t_redir));
+	if (!redir)
+		return NULL;
+
+	redir->type = type;
+	redir->file = file;
+	redir->next = NULL;
+	return (redir);
+}
